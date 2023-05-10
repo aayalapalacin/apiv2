@@ -34,7 +34,7 @@ logger = logging.getLogger(__name__)
 
 MIME_ALLOW = [
     'image/png', 'image/svg+xml', 'image/jpeg', 'image/gif', 'video/quicktime', 'video/mp4', 'audio/mpeg',
-    'application/pdf', 'image/jpg'
+    'application/pdf', 'image/jpg', 'text/csv'
 ]
 
 IMAGES_MIME_ALLOW = ['image/png', 'image/svg+xml', 'image/jpeg', 'image/jpg']
