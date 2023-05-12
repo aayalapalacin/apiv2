@@ -69,7 +69,7 @@ POST: activity/coding_error/
     "user_id" => "my@email.com",
     "slug" => "webpack_error",
     "data" => "optional additional information about the error",
-    "message" => "file not found",
+    "message" => "",
     "name" => "module-not-found,
     "severity" => "900",
     "details" => "stack trace for the error as string"

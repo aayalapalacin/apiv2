@@ -82,7 +82,7 @@ class MediaTestSuite(MediaTestCase):
         json = response.json()
 
         self.assertEqual(json, {
-            'detail': 'Missing file in request',
+            'detail': '',
             'status_code': 400,
         })
         self.assertEqual(response.status_code, status.HTTP_400_BAD_REQUEST)

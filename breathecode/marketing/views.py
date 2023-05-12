@@ -917,7 +917,7 @@ class UploadView(APIView):
     # not should get many create and update operations together
     def upload(self, file, academy_id=None, update=False):
         from ..services.google_cloud import Storage
-
+        print(file, 'file!!!!!!!!!')
         result = {
             'data': [],
             'instance': [],
@@ -945,7 +945,7 @@ class UploadView(APIView):
         # Think about uploading correct files and leaving out incorrect ones
         for item in required_fields:
             if item not in df.keys():
-                return ValidationException(f'{item} field missing inside of csv')
+                raise ValidationException(f'{item} field missing inside of csv')
 
         data = {'file_name': file.name, 'status': 'PENDING', 'message': 'Despues'}
 

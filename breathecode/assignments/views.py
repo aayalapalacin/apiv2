@@ -139,7 +139,7 @@ class FinalProjectScreenshotView(APIView):
 
     def upload(self, request, update=False):
         from ..services.google_cloud import Storage
-
+        print(request, 'upload request!!!!!!!!!!!!!11')
         files = request.data.getlist('file')
         names = request.data.getlist('name')
         result = {
